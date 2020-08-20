@@ -338,6 +338,7 @@ namespace wal
 	static LacaleCharsetAlias csAliasTable[] =
 	{
 		{"UTF-8",   CS_UTF8},
+		{"UTF8",    CS_UTF8},
 		{"CP1251",  CS_WIN1251},
 		{"CP866",   CS_CP866},
 		{"KOI8-R",  CS_KOI8R},
