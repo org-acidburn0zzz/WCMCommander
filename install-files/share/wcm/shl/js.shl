@@ -30,12 +30,13 @@ state newline default {
 	rule	<[$(a)$(d)_]+>	{ 
 		state = default;  
 		words (KEYWORD) = {
-			'break', 'case', 'catch', 'class', 'const', 'constructor', 'continue', 'do', 'else', 'export', 'for',
-			'from', 'function', 'goto', 'if', 'import', 'new', 'prototype', 'return', 'switch', 'throw', 'try',
-			'var', 'while'
+			'break', 'case', 'catch', 'class', 'const', 'constructor',
+			'continue', 'delete', 'do', 'else', 'export', 'for', 'from',
+			'function', 'goto', 'if', 'import', 'new', 'prototype',
+			'return', 'switch', 'throw', 'try','var', 'while'
 		};
 		words (NUM) = {
-			'NaN', 'infinity', 'undefined', 'null'
+			'NaN', 'infinity', 'undefined', 'null', 'true', 'false'
 		};
 	};
 	rule	<[$(a)$(d)_]+\:>	{ 
